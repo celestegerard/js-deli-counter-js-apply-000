@@ -1,8 +1,14 @@
 var katzDeliLine = [];
 
-
-  
-
+function takeANumber(katzDeliLine) {
+  if (katzDeliLine===0){
+    katzDeliLine.push(1);
+    return `Welcome, 1. You are number ${katzDeliLine.length} in line.`
+  }else{
+    katzDeliLine.push((katzDeliLine.slice(-1)+1))
+  }
+  }
+}
 function nowServing (katzDeliLine) {
   if (katzDeliLine.length === 0) {
     return "There is nobody waiting to be served!";
