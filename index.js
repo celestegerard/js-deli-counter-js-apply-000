@@ -1,5 +1,16 @@
 var katzDeliLine = [];
 
+function takeANumber(katzDeliLine) {
+    var count =(parseInt(katzDeliLine.slice(-1))+1);
+    if (katzDeliLine === 0){
+        katzDeliLine.push(1);
+        return `Welcome, 1. You are number ${katzDeliLine.length} in line.`;
+    } else {
+        katzDeliLine.push(count);
+    }
+    return `Welcome, ${count}. You are number ${katzDeliLine.length} in line.`
+}
+
 
 function nowServing (katzDeliLine) {
   if (katzDeliLine.length === 0) {
